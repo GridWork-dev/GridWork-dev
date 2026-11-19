@@ -1,25 +1,19 @@
-# Liam · GridWork
+# GridWork
 
-I build developer infrastructure in the open, and I run it on myself first.
-
-**[gridwork.dev](https://gridwork.dev)** is the evidence: the systems, what they have shipped, and
-how they run.
+I run a fleet of coding agents as one operator. An orchestrator session splits the work into
+parallel lanes, review lanes check it, and merge trains land it. That setup is building
+products that have not launched yet. The two public repos below are already published.
 
 ### Open source
 
-- **[gridwork](https://github.com/GridWork-dev/gridwork)**: a terminal-native agent operating
-  system. One Rust binary, `gw`. An append-only event log is the source of truth, and a TUI is the
-  only surface. Apache-2.0; docs at [gridwork.sh](https://gridwork.sh).
+- **[gridwork](https://gridwork.sh)**: a terminal-native agent operating system, in the open.
+  One Rust binary, `gw`. An append-only event log is the source of truth, a TUI is the only
+  surface, and the kernel owns the authority policy: what an agent may do unattended and what
+  pages a human. Pre-alpha, published as Rust crates, Apache-2.0. Feature work is paused;
+  dependency and security updates still land.
 - **[caisson](https://caisson.sh)**: composable TypeScript packages for building regulated SaaS:
   fail-closed tenant isolation, an append-only audit chain, field-level encryption and compliance
-  evidence. Apache-2.0, published under `@caisson-sh/*`.
+  evidence. Apache-2.0, published to npm under `@caisson-sh/*` with provenance attestations.
 
-### Follow along
-
-- **Releases:** watch [gridwork](https://github.com/GridWork-dev/gridwork) with *Watch → Custom →
-  Releases*.
-- **The work behind them:** [gridwork.dev](https://gridwork.dev).
-
-The green squares below are real. Nearly all of them are agent-authored, under an earlier private
-version of this same tooling: specs, authority gates, event-sourced telemetry, and a fleet of
-terminal agents shipping production systems. GridWork is that internal system, rebuilt in the open.
+The green squares below are real, and most of the recent ones are that private product work.
+Agents write most of the commits. I make the calls.
